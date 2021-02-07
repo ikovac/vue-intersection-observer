@@ -5,7 +5,7 @@
       <p>Page text</p>
     </div>
     <vue-intersection-provider>
-      <vue-intersection-observer @in-view="handleOnView" :threshold="0.4">
+      <vue-intersection-observer @in-view="handleInView" :threshold="0.4">
         <img
           :src="imageSrc"
           alt="placeholder"
@@ -24,7 +24,7 @@ export default {
   name: 'app',
   data: () => ({ imageSrc: PLACEHOLDER_URL }),
   methods: {
-    handleOnView() {
+    handleInView() {
       this.imageSrc = ORIGINAL_IMAGE_URL;
     }
   }
