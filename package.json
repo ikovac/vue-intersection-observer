@@ -1,0 +1,65 @@
+{
+  "name": "vue-intersection-observer",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "lazy",
+    "loading",
+    "intersection",
+    "observer"
+  ],
+  "homepage": "https://github.com/ikovac/vue-intersection-observer#readme",
+  "bugs": {
+    "url": "https://github.com/ikovac/vue-intersection-observer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikovac/vue-intersection-observer.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "dist/vue-intersection-observer.cjs.js",
+  "module": "dist/vue-intersection-observer.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "del-cli dist",
+    "build": "bili",
+    "dev": "poi -s"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.12.13",
+    "@babel/eslint-plugin": "^7.12.13",
+    "@extensionengine/eslint-config": "^2.0.0",
+    "@rollup/plugin-alias": "^3.1.2",
+    "@types/babel__core": "^7.1.12",
+    "@types/eslint": "^7.2.6",
+    "bili": "^5.0.5",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.19.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-require-sort": "^1.2.2",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "np": "^7.3.0",
+    "poi": "^12.10.3",
+    "rollup-plugin-vue": "^5.1.9",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "np": {
+    "yarn": false
+  },
+  "poi": {
+    "entry": "example/index.js",
+    "output": {
+      "dir": "example/dist"
+    }
+  }
+}
